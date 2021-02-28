@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+p {
+    font-family: 300;
+    color: #fff;
+}
+
+.main_page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3));
+    position: relative;
+    clip-path: polygon(100% 0%, 100% 50%, 50% 100%, 0% 50%, 0% 0%);
+}
+
+.main_page:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%)
+}
+
+.main_page .content {
+    margin-top: 50px;
+    max-width: 900px;
+    text-align: center;
+    z-index: 10000;
+}
+
+.main_page .content h1 {
+    font-size: 2.8em;
+    color: #fff;
+}
+
+.change-content:after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #fff;
+}
+
+@keyframes changetext {
+    0% {
+        content: "CARDS";
+    }
+    10% {
+        content: "PAYMENT";
+    }
+    22% {
+        content: "LOAN";
+    }
+    30% {
+        content: "SUPPORT";
+    }
+    42% {
+        content: "REWARDS";
+    }
+    55% {
+        content: "SAVINGS";
+    }
+    70% {
+        content: "INVESTMENT";
+    }
+    85% {
+        content: "FOREX";
+    }
+    100% {
+        content: "ANALYTICS";
+    }
+}
+
+
+/* part of invitation button */
+
+
+/* body{
+    margin : 0 ; 
+    padding : 0 ; 
+    background : #e74c3c; 
+
+} */
+
+
+/* .inviv{
+    margin-top: 50px;
+    max-width: 900px;
+    text-align: center;
+    z-index:  10000;
+} */
+
+.invitation-text {
+    font-style: italic;
+}
+
+.invitation {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #34495e;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.invitation:hover>.emailbox {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.invitation:hover>.arrow-right-btn {
+    background: white;
+}
+
+.arrow-right-btn {
+    color: #3498db;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.emailbox {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%
+}
+
+
+/* this is the second section */
+
+.features {
+    /* padding : 50px;  */
+    position: absolute;
+    margin-left: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col30 {
+    position: relative;
+    width: 40%;
+    /* background-color: orchid; */
+    /* background-image: linear-gradient(rgba(0, 168,255,0.3), rgba(0,168,255, 0.3)); */
+    background-image: linear-gradient(to right, #3ccdbb, #18cdcc, #00cddc, #00cbea, #16c9f6);
+    clip-path: polygon(72% 0, 100% 50%, 72% 100%, 0 100%, 0 0);
+}
+
+.row .col30:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    background-image: linear-gradient(to right, #3ccdbb, #18cdcc, #00cddc, #00cbea, #16c9f6);
+}
+
+.copyright {
+    color: #fff;
+}
+
+.row .col70 {
+    position: relative;
+    float: right;
+}
+
+.vc_regular_man_td {
+    float: left;
+}
+
+.visual_content_holder {
+    text-align: center;
+    display: inline-block;
+    color: black;
+}
+
+.edit {
+    margin-left: 10px;
+}
+
+.qrcode {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
